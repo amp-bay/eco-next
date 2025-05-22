@@ -3,9 +3,10 @@ import { stripe } from "@/lib/stripe"
 
 
 
-const productIdPage=async({params}:{params:{id:string}})=>{
+const productIdPage=async({params}:{params:Promise<{id:string}>})=>{
 
-    const product =await stripe.products.retrieve(params.id,{
+    const {id}=await params
+    const product =await stripe.products.retrieve(id,{
         expand: ["default_price"]
     })
 
