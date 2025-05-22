@@ -2,7 +2,6 @@
 
 import React, { useEffect } from 'react';
 import { useRouter } from 'next/navigation';
-import { useStore } from 'zustand';
 import { useCartStore } from '@/store/cart-store';
 
 const PurchasedPage = () => {

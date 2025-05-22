@@ -24,7 +24,7 @@ const ChangingText = () => {
         },2000)
 
         return ()=>clearInterval(textInterval)
-    },[])
+    },[welcomeTexts.length])
   
   return (
     <div>

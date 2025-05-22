@@ -21,7 +21,7 @@ const AboutUs = async() => {
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-grey">About Us</h2>
           <p className="mt-4 mx-auto text-gray-600 text-lg ">
-            At <span className="text-blue-500 font-semibold">CHOP-LIFE</span>, we bring you the best of authentic Chinese cuisine — from spicy stir-fries and savory soups to classic noodle and rice dishes. Whether you're craving comfort food or a culinary adventure, we serve up bold flavors and fresh ingredients in every bite.
+            At <span className="text-blue-500 font-semibold">CHOP-LIFE</span>, we bring you the best of authentic Chinese cuisine — from spicy stir-fries and savory soups to classic noodle and rice dishes. Whether you are craving comfort food or a culinary adventure, we serve up bold flavors and fresh ingredients in every bite.
           </p>
         </div>
 
