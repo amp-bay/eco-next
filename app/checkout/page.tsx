@@ -11,8 +11,8 @@ const CheckoutPage = () => {
   const total =items.reduce((acc,item)=>acc +item.price *item.quantity,0)
 
   if (total ===0 || items.length === 0)
-    {return <div>
-      <p>Your Cart is currently empty. Explore our  <span className='text-red-300'><Link href="/products">Product</Link></span></p>
+    {return <div className='border border-transparent min-h-156 flex justify-center items-center' >
+      <p className='text-center text-2xl '>Your Cart is currently empty. Explore our  <span className='text-amber-600'><Link href="/products">Product</Link></span></p>
     </div>}
     // return ()
 

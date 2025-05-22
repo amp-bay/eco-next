@@ -1,3 +1,4 @@
+import AboutUs from '@/components/AboutUs';
 import Carousel from '@/components/Carousel';
 import ChangingText from '@/components/ChangingText';
 import { Button } from '@/components/ui/button';
@@ -33,6 +34,10 @@ export default async function Home() {
       </section>
       <section className="py-8">
         <Carousel products={products.data} />
+      </section>
+
+      <section className="py-8">
+        <AboutUs/>
       </section>
 
     </div>

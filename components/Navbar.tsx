@@ -13,16 +13,19 @@ const Navbar = () => {
   const {items}=useCartStore()
   const cartItemCount =items.reduce((total,item)=>total +item.quantity,0)
   return (
-    <nav className="sticky top-0 z-50 bg-white shadow">
-      <div className="container mx-auto flex items-center justify-between px-4 py-4">
+    <nav className="container mx-auto  sticky top-0 z-50 bg-amber-400 shadow md:rounded-2xl">
+      <div className="container mx-auto flex items-center justify-between px-4 py-4 rounded-2xl">
         <Link href="/" className="hover:text-blue-600">
          <span className='text-blue-500 '>CHOP-LIFE</span>
         </Link>
 
         {!mobileMenuOpen && (
-        <div className="hidden md:flex space-x-6">
+        <div className="text-amber-950 text-lg hidden md:flex space-x-6">
           <Link href="/">
             Home
+          </Link>
+          <Link href="#about" className="hover:text-blue-600">
+           About Us
           </Link>
           <Link href="/products" className="hover:text-blue-600">
            Products
@@ -32,9 +35,7 @@ const Navbar = () => {
           </Link>
         </div>)}
 
-        <div>
-
-        </div>
+       
 
         <div className="flex items-center space-x-4">
           <Link href="/checkout"> 
@@ -69,6 +70,9 @@ const Navbar = () => {
                 Home
               </Link>
             </li>
+            <Link href="#about" className="block hover:text-blue-600">
+            About Us
+            </Link>
             <li>
               <Link href="/products" className="block hover:text-blue-600">
                 Products
